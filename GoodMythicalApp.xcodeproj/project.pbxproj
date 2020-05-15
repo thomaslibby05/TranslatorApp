@@ -13,6 +13,8 @@
 		68C07B15246F3A3400D758E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C07B13246F3A3400D758E3 /* Main.storyboard */; };
 		68C07B17246F3A3500D758E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68C07B16246F3A3500D758E3 /* Assets.xcassets */; };
 		68C07B1A246F3A3500D758E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C07B18246F3A3500D758E3 /* LaunchScreen.storyboard */; };
+		68C07B26246F42B800D758E3 /* SelectThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C07B25246F42B800D758E3 /* SelectThemeViewController.swift */; };
+		68C07B29246F4C1D00D758E3 /* ThemeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C07B28246F4C1D00D758E3 /* ThemeHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		68C07B16246F3A3500D758E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68C07B19246F3A3500D758E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68C07B1B246F3A3500D758E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68C07B25246F42B800D758E3 /* SelectThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectThemeViewController.swift; sourceTree = "<group>"; };
+		68C07B28246F4C1D00D758E3 /* ThemeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		68C07B0C246F3A3400D758E3 /* GoodMythicalApp */ = {
 			isa = PBXGroup;
 			children = (
-				68C07B0D246F3A3400D758E3 /* AppDelegate.swift */,
-				68C07B0F246F3A3400D758E3 /* SceneDelegate.swift */,
-				68C07B11246F3A3400D758E3 /* ViewController.swift */,
-				68C07B13246F3A3400D758E3 /* Main.storyboard */,
-				68C07B16246F3A3500D758E3 /* Assets.xcassets */,
-				68C07B18246F3A3500D758E3 /* LaunchScreen.storyboard */,
+				68C07B24246F3A7400D758E3 /* Models */,
+				68C07B23246F3A6F00D758E3 /* Views */,
+				68C07B22246F3A6900D758E3 /* ViewControllers */,
+				68C07B21246F3A4800D758E3 /* Resources */,
+				68C07B27246F4BFB00D758E3 /* Helpers */,
 				68C07B1B246F3A3500D758E3 /* Info.plist */,
 			);
 			path = GoodMythicalApp;
+			sourceTree = "<group>";
+		};
+		68C07B21246F3A4800D758E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68C07B16246F3A3500D758E3 /* Assets.xcassets */,
+				68C07B0D246F3A3400D758E3 /* AppDelegate.swift */,
+				68C07B0F246F3A3400D758E3 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		68C07B22246F3A6900D758E3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				68C07B11246F3A3400D758E3 /* ViewController.swift */,
+				68C07B25246F42B800D758E3 /* SelectThemeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		68C07B23246F3A6F00D758E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68C07B13246F3A3400D758E3 /* Main.storyboard */,
+				68C07B18246F3A3500D758E3 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68C07B24246F3A7400D758E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68C07B27246F4BFB00D758E3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				68C07B28246F4C1D00D758E3 /* ThemeHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C07B26246F42B800D758E3 /* SelectThemeViewController.swift in Sources */,
 				68C07B12246F3A3400D758E3 /* ViewController.swift in Sources */,
 				68C07B0E246F3A3400D758E3 /* AppDelegate.swift in Sources */,
+				68C07B29246F4C1D00D758E3 /* ThemeHelper.swift in Sources */,
 				68C07B10246F3A3400D758E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
